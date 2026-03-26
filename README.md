@@ -1,16 +1,16 @@
-# 🏗️ Enterprise ODS ETL Pipeline — SSIS + SQL Server
+#  Enterprise ODS ETL Pipeline — SSIS + SQL Server
 
 > An end-to-end **Operational Data Store (ODS)** built with SQL Server Integration Services (SSIS), consolidating data from multiple source systems into a unified, query-ready data store.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements a production-style ODS that ingests data from two transactional source systems (**Sales** and **HR**), applies data quality rules, and loads clean, integrated data into a centralized store for operational reporting and analytics.
 
 ---
 
-## 🏛️ Architecture
+##  Architecture
 
 ```
 SourceDB_Sales          SourceDB_HR
@@ -36,7 +36,7 @@ SourceDB_Sales          SourceDB_HR
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -48,7 +48,7 @@ SourceDB_Sales          SourceDB_HR
 
 ---
 
-## 📦 SSIS Packages
+##  SSIS Packages
 
 | Package | Type | Load Strategy | Lookup |
 |---------|------|---------------|--------|
@@ -64,7 +64,7 @@ SourceDB_Sales          SourceDB_HR
 
 ---
 
-## 🔄 ETL Design Patterns Used
+##  ETL Design Patterns Used
 
 - **Incremental Load** — extracts only modified records using `LastLoadDate` watermarking
 - **SCD Type 1** — overwrites changed dimension attributes in-place
@@ -74,7 +74,7 @@ SourceDB_Sales          SourceDB_HR
 
 ---
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 ODS-ETL-Project/
@@ -103,7 +103,7 @@ ODS-ETL-Project/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - SQL Server 2019 or 2022 (with SSIS feature installed)
@@ -133,7 +133,7 @@ ODS-ETL-Project/
 
 ---
 
-## 🧪 Validation
+##  Validation
 
 ```sql
 -- Check row counts across all tables
@@ -161,7 +161,7 @@ UPDATE SourceDB_Sales.dbo.Customers SET Phone = '555-9999' WHERE CustomerID = 1;
 
 ---
 
-## 📊 Key Features
+##  Key Features
 
 - ✅ **Full orchestration** via Master Package — dimensions always load before facts
 - ✅ **ETL metadata logging** — every execution tracked in `meta` schema
