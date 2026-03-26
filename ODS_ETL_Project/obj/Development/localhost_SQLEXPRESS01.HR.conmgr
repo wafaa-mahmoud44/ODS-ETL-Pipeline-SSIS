@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost_SQLEXPRESS01.HR"
+  DTS:DTSID="{1595116C-209D-4C60-AFFD-72674176100D}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost\SQLEXPRESS01;Initial Catalog=HR;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-ODS_ETL_Project-{1595116C-209D-4C60-AFFD-72674176100D}localhost\SQLEXPRESS01.HR;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
