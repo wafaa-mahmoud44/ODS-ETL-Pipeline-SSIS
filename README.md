@@ -170,9 +170,3 @@ UPDATE SourceDB_Sales.dbo.Customers SET Phone = '555-9999' WHERE CustomerID = 1;
 - ✅ **Multi-source integration** — Sales and HR systems unified in one ODS
 
 ---
-
-## 📬 Contact
-
-**[Your Name]**  
-Data Engineer  
-[LinkedIn URL] | [Email]
